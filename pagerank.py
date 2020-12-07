@@ -88,7 +88,7 @@ def main():
     file_name = None
     while not choice_is_valid:
         print('1. Symmetric pattern from Cannes, Lucien Marro, June 1981 (10,010 Nonzeros)')
-        print('2. Symmetric connection table from DTNSRDC, Washington (10,426 Nonzeros)')
+        print('2. Web matrix (Numerical Computing with MATLAB, Moler, 2004) (2,636 Nonzeros')
         print('3. Test network')
         choice = input('Please choose option (1), (2), or (3) ')
 
@@ -96,7 +96,7 @@ def main():
             file_name = 'can_838.mtx'
             choice_is_valid = True
         elif choice == '2':
-            file_name = 'dwt_1242.mtx'
+            file_name = 'Harvard500.mtx'
             choice_is_valid = True
         elif choice == '3':
             file_name = 'test_network.mtx'

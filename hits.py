@@ -83,15 +83,15 @@ def main():
 
 	while not choice_is_valid:
 		print('1. Symmetric pattern from Cannes, Lucien Marro, June 1981 (10,010 Nonzeros)')
-		print('2. Symmetric connection table from DTNSRDC, Washington (10,426 Nonzeros)')
-		print('3. Test network')
+		print('2. Web matrix (Numerical Computing with MATLAB, Moler, 2004) (2,636 Nonzeros')
+		print('3. Test network (7 Nonzeros)')
 		choice = input('Please choose option (1), (2), or (3) ')
 
 		if choice == '1':
 			file_name = 'can_838.mtx'
 			choice_is_valid = True
 		elif choice == '2':
-			file_name = 'dwt_1242.mtx'
+			file_name = 'Harvard500.mtx'
 			choice_is_valid = True
 		elif choice == '3':
 			file_name = 'test_network.mtx'
@@ -127,8 +127,8 @@ def main():
 	print('Biggest authority (value):', max_auth_keys, '(', max_auth_value, ')')
 	print()
 
-	print(' Hub scores: ' + str(hubs1))
-	print('Auth scores: ' + str(authorities1))
+	print(' Hub scores: ' + str(hubs2))
+	print('Auth scores: ' + str(authorities2))
 
 
 main()
