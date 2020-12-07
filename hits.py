@@ -84,13 +84,17 @@ def main():
 	while not choice_is_valid:
 		print('1. Symmetric pattern from Cannes, Lucien Marro, June 1981 (10,010 Nonzeros)')
 		print('2. Symmetric connection table from DTNSRDC, Washington (10,426 Nonzeros)')
-		choice = input('Please choose option (1) or (2) ')
+		print('3. Test network')
+		choice = input('Please choose option (1), (2), or (3) ')
 
 		if choice == '1':
 			file_name = 'can_838.mtx'
 			choice_is_valid = True
 		elif choice == '2':
 			file_name = 'dwt_1242.mtx'
+			choice_is_valid = True
+		elif choice == '3':
+			file_name = 'test_network.mtx'
 			choice_is_valid = True
 		else:
 			print('Choice is not valid.')
