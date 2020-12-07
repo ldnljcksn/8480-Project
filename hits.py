@@ -125,6 +125,10 @@ def main():
 
 	print('      Biggest hub (value):', max_hub_keys, '(', max_hub_value, ')')
 	print('Biggest authority (value):', max_auth_keys, '(', max_auth_value, ')')
+	print()
+
+	print(' Hub scores: ' + str(hubs1))
+	print('Auth scores: ' + str(authorities1))
 
 
 main()
